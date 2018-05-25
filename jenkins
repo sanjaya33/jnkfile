@@ -1,6 +1,7 @@
 node {
     stage('Source Checkout') {
-         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '93b385e8-55c5-44be-b003-71af9a78e315', url: 'https://github.com/s3s-tech/devops.git']]])
+         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '3ed6b14b-ec34-4974-b238-66b8cd79db1a', url: 'https://github.com/sanjaya33/jnkfile.git']]])
+
 }
 stage('Build Package') {   
     sh 'mvn -f  MAVEN/pom.xml clean package'}
