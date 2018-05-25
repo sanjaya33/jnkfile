@@ -1,6 +1,6 @@
 node {
     stage('Source Checkout') {
-         checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '3ed6b14b-ec34-4974-b238-66b8cd79db1a', url: 'https://github.com/sanjaya33/jnkfile.git']]])
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '3ed6b14b-ec34-4974-b238-66b8cd79db1a', url: 'https://github.com/s3s-tech/devops.git']]])
 
 }
 stage('Build Package') {   
